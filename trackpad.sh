@@ -23,3 +23,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
 defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+
+# Enable tap-to-drag on built-in trackpad.
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 2
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 2
